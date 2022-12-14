@@ -265,34 +265,30 @@ i.techn:hover > br + span {
   color: black;
 }
 
-.portfolio_section {
+.project-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.portfolio_section > div {
-  border: 1px solid #e2e2e2;
-  margin: 20px;
-  width: 300px;
-  border-radius: 20px;
+.img-container img {
+  max-height: 450px;
+  min-height: fit-content;
+  width: auto;
 }
-.portfolio_section > div h3 {
+
+.info-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 0px 40px;
+}
+
+.info-project small {
   font-size: 16px;
-}
-
-.portfolio_section > div h3,
-.portfolio_section > div small {
-  padding: 5px 20px;
-}
-
-.portfolio_section > div small {
-  font-size: 14px;
-}
-
-.img-container {
-  text-align: center;
+  padding: 10px 0px;
 }
 
 /*Contact Section*/
@@ -352,5 +348,17 @@ i.fa-envelope:hover + span {
 
   .level {
     font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .info-project a {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .img-container img {
+    max-height: 250px;
   }
 }
