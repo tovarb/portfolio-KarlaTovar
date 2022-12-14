@@ -355,6 +355,11 @@ i.fa-envelope:hover + span {
   .info-project a {
     margin-bottom: 50px;
   }
+
+  .img-container img {
+    max-height: 200px;
+    min-height: fit-content;
+  }
 }
 
 @media only screen and (max-width: 425px) {
